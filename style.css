@@ -18,15 +18,6 @@ a:hover {
     cursor: pointer;
 }
 
-#page-loading-blocs-notifaction {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
-}
-
 .bloc {
     width: 100%;
     clear: both;
@@ -78,21 +69,6 @@ a:hover {
 
 .bg-t-edge {
     background: top no-repeat;
-}
-
-.bloc-bg-texture::before {
-    content: "";
-    background-size: 2px 2px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
 }
 
 .b-parallax {
@@ -275,6 +251,7 @@ a:hover {
 .row-no-gutters {
     margin-right: 0;
     margin-left: 0;
+    margin-bottom:50px;
 }
 
 .row.row-no-gutters > [class^="col-"],
@@ -487,6 +464,11 @@ button {
     text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
 }
 
+.text-center > p {
+    font-size: 14px!important;
+    color: #333340;
+}
+
 .panel-sq,
 .panel-sq .panel-heading,
 .panel-sq .panel-footer {
@@ -651,7 +633,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #afb5c9!important;
 }
 
 .container {
@@ -701,7 +683,8 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto;
+    padding: 14px;
 }
 
 h2 {
@@ -727,7 +710,8 @@ h1 {
 }
 
 h4 {
-    color: #333333!important;
+    font-size: 15px;
+    color: #afb5c9!important;
 }
 
 .icons {
@@ -781,7 +765,7 @@ h4 {
 }
 
 .tc-white {
-    color: #364577!important;
+    color: #fff!important;
 }
 
 .btn-atomic-tangerine {
@@ -1009,6 +993,9 @@ h4 {
     }
     .voffset {
         margin-top: 5px;
+    }
+    .voffset p {
+        font-size: 32px;
     }
     .voffset-md {
         margin-top: 20px;
