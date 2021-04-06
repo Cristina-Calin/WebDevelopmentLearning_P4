@@ -19,7 +19,13 @@ a:hover {
 }
 
 .col-sm-4 ul li {
-    line-height: 28px;
+    line-height: 38px;
+}
+
+@media (min-width: 661px) {
+    .col-sm-4 ul li {
+        line-height: 28px;
+    }
 }
 
 .bloc {
