@@ -18,6 +18,10 @@ a:hover {
     cursor: pointer;
 }
 
+.col-sm-4 ul li {
+    line-height: 28px;
+}
+
 .bloc {
     width: 100%;
     clear: both;
@@ -466,7 +470,11 @@ button {
 
 .text-center > p {
     font-size: 14px!important;
-    color: #333340;
+    color: #19191c;
+}
+
+.text-center {
+    margin-top: 10px;
 }
 
 .panel-sq,
@@ -633,7 +641,13 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #afb5c9!important;
+    color: #343435!important;
+}
+
+
+
+.col-sm-4 li a {
+    color:#afb5c9!important;
 }
 
 .container {
@@ -667,10 +681,20 @@ p {
     margin: auto auto auto auto;
 }
 
-.h1 {
-    font-size: 20px;
-    font-family: "Open Sans";
+h1 {
+    font-size: 28px;
+    font-family: "Helvetica";
 }
+
+
+@media (min-width: 661px) {
+    h1 {
+        font-size: 36px;
+        font-family: "Helvetica";
+    }
+}
+
+
 
 .cta-hero {
     margin-top: 22px;
@@ -808,11 +832,21 @@ h4 {
 }
 
 .bg-atlanta-20made-20sign {
-    background-image: url("img/atlanta-made-sign.jpg");
+    background-image: url("img/atlanta-made-sign-sm.jpg");
 }
 
 .bg-atlanta-20made-20sign-20orange {
-    background-image: url("img/atlanta-made-sign-orange.jpg");
+    background-image: url("img/atlanta-made-sign-orange-sm.jpg");
+}
+
+@media (min-width: 661px) {
+    .bg-atlanta-20made-20sign {
+        background-image: url("img/atlanta-made-sign.jpg");
+    }
+    
+    .bg-atlanta-20made-20sign-20orange {
+        background-image: url("img/atlanta-made-sign-orange.jpg");
+    }
 }
 
 @media (max-width: 1024px) {
@@ -988,6 +1022,7 @@ h4 {
     .a-block {
         padding: 0 10px;
     }
+  
     .btn-dwn {
         display: none;
     }
@@ -1018,6 +1053,9 @@ h4 {
     .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
+    }
+    .col-sm-4 .li {
+        line-height: 5;
     }
 }
 
