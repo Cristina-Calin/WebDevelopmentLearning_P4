@@ -864,7 +864,7 @@ h4 {
     height: auto;
 }
 
-.img-responsive portfolio-thumb {
+.img-responsive .portfolio-thumb {
     max-width: 92%;
     height: auto;
 }
